@@ -171,6 +171,12 @@ class IPChecker {
         if (countryElement) countryElement.textContent = data.country_name || notDeterminedText;
         if (ispElement) ispElement.textContent = data.org || notDeterminedText;
         if (timezoneElement) timezoneElement.textContent = data.timezone || notDeterminedText;
+        
+        // Отслеживаем успешное определение IP
+        if (window.GoogleAnalytics) {
+            if (data.ip) window.GoogleAnalytics.trackIPDetection('ipv4', true);
+            if (data.ipv6) window.GoogleAnalytics.trackIPDetection('ipv6', true);
+        }
     }
 
     showError() {
@@ -347,6 +353,10 @@ class IPChecker {
         if (navigator.clipboard) {
             navigator.clipboard.writeText(text).then(() => {
                 this.showCopySuccess(elementId);
+                // Отслеживаем копирование IP
+                if (window.GoogleAnalytics) {
+                    window.GoogleAnalytics.trackCopyIP(elementId);
+                }
             });
         } else {
             // Fallback для старых браузеров
@@ -357,6 +367,10 @@ class IPChecker {
             document.execCommand('copy');
             document.body.removeChild(textArea);
             this.showCopySuccess(elementId);
+            // Отслеживаем копирование IP
+            if (window.GoogleAnalytics) {
+                window.GoogleAnalytics.trackCopyIP(elementId);
+            }
         }
     }
 
@@ -376,6 +390,11 @@ class IPChecker {
         const input = document.getElementById('ipLookupInput');
         const result = document.getElementById('ipLookupResult');
         const ip = input.value.trim();
+
+        // Отслеживаем использование инструмента IP Lookup
+        if (window.GoogleAnalytics) {
+            window.GoogleAnalytics.trackToolUsage('ip_lookup', 'used');
+        }
 
         if (!ip) {
             result.innerHTML = '<div class="error">Enter IP address</div>';
@@ -418,6 +437,11 @@ class IPChecker {
         const result = document.getElementById('dnsLookupResult');
         const domain = input.value.trim();
 
+        // Отслеживаем использование инструмента DNS Lookup
+        if (window.GoogleAnalytics) {
+            window.GoogleAnalytics.trackToolUsage('dns_lookup', 'used');
+        }
+
         if (!domain) {
             result.innerHTML = '<div class="error">Enter domain</div>';
             return;
@@ -450,6 +474,11 @@ class IPChecker {
         const result = document.getElementById('proxyCheckResult');
         result.innerHTML = '<div class="loading">Checking proxy...</div>';
 
+        // Отслеживаем использование инструмента Proxy Check
+        if (window.GoogleAnalytics) {
+            window.GoogleAnalytics.trackToolUsage('proxy_check', 'used');
+        }
+
         try {
             const response = await fetch('https://ipinfo.io/json');
             const data = await response.json();
@@ -477,6 +506,11 @@ class IPChecker {
         const input = document.getElementById('blacklistInput');
         const result = document.getElementById('blacklistResult');
         const ip = input.value.trim();
+
+        // Отслеживаем использование инструмента Blacklist Check
+        if (window.GoogleAnalytics) {
+            window.GoogleAnalytics.trackToolUsage('blacklist_check', 'used');
+        }
 
         if (!ip) {
             result.innerHTML = '<div class="error">Enter IP address</div>';
@@ -522,6 +556,11 @@ class IPChecker {
         const result = document.getElementById('speedTestResult');
         const button = document.getElementById('speedTestBtn');
         const resetButton = document.getElementById('speedTestResetBtn');
+        
+        // Отслеживаем использование инструмента Speed Test
+        if (window.GoogleAnalytics) {
+            window.GoogleAnalytics.trackToolUsage('speed_test', 'started');
+        }
         
         if (!result || !button) return;
 
@@ -972,6 +1011,10 @@ class IPChecker {
         // Обновляем блоки с результатами
         this.updateLeftResultsWithStatus(ping, speed, overallStatus);
         
+        // Отслеживаем результаты speed test
+        if (window.GoogleAnalytics) {
+            window.GoogleAnalytics.trackSpeedTest(speed, ping, overallStatus);
+        }
         
         this.updateSpeedometer(speed, `${t.speed}: ${speed} ${t.mbps}`);
     }

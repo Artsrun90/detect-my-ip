@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import { glob } from 'glob'
 
 export default defineConfig({
   root: '.',
@@ -6,9 +7,7 @@ export default defineConfig({
     outDir: 'dist',
     emptyOutDir: true,
     rollupOptions: {
-      input: {
-        main: 'index.html'
-      }
+      input: glob.sync('**/*.html', { ignore: ['node_modules/**'] })
     },
     assetsDir: 'assets'
   },
