@@ -4,10 +4,17 @@ export default defineConfig({
   root: '.',
   build: {
     outDir: 'dist',
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: 'index.html'
+      }
+    },
+    assetsDir: 'assets'
   },
   server: {
     port: 3000,
     open: true
-  }
+  },
+  publicDir: 'public'
 })
