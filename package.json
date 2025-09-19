@@ -1,0 +1,32 @@
+{
+  "name": "ipdetector",
+  "version": "1.0.0",
+  "description": "Профессиональный сервис для определения IP адреса с поддержкой IPv4/IPv6, геолокации и сетевых инструментов",
+  "type": "module",
+  "main": "public/index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite preview"
+  },
+  "keywords": [
+    "ip",
+    "ip-address",
+    "ipv4",
+    "ipv6",
+    "geolocation",
+    "network-tools",
+    "dns",
+    "whois",
+    "proxy-check",
+    "blacklist-check"
+  ],
+  "author": "IPDetector Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {}
+}
+

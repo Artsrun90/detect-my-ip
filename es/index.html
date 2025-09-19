@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="es" id="html-lang">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-7600501505462222">
+    <title>DetectMyIP - Verificar Dirección IP en Línea | Herramienta Gratuita de IP</title>
+    <meta name="description" content="Verificador gratuito de dirección IP y herramientas de red. Detecte instantáneamente su IP pública, ubicación, proveedor y zona horaria. Soporte IPv4/IPv6 con diagnósticos avanzados de red.">
+    <meta name="keywords" content="dirección IP, mi IP, verificar IP, geolocalización, proveedor, herramientas de red, búsqueda IP, IPv4, IPv6, verificación proxy, DNS lookup, verificación lista negra, detector IP, IP pública, IP privada, protocolo internet">
+    <meta name="author" content="DetectMyIP">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="es">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="theme-color" content="#667eea">
+    
+    <!-- Additional SEO meta tags -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="DetectMyIP">
+    <meta name="application-name" content="DetectMyIP">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Security headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- Performance hints -->
+    <link rel="dns-prefetch" href="//api.ipify.org">
+    <link rel="dns-prefetch" href="//ipinfo.io">
+    <link rel="preconnect" href="//api.ipify.org">
+    <link rel="preconnect" href="//ipinfo.io">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://detectmyip.net/es/">
+    <meta property="og:title" content="DetectMyIP - Verificar Dirección IP en Línea | Herramienta Gratuita de IP">
+    <meta property="og:description" content="Verificador gratuito de dirección IP y herramientas de red. Detecte instantáneamente su IP pública, ubicación, proveedor y zona horaria. Soporte IPv4/IPv6 con diagnósticos avanzados de red.">
+    <meta property="og:image" content="https://detectmyip.net/favicon/favicon.svg">
+    <meta property="og:site_name" content="DetectMyIP">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://detectmyip.net/es/">
+    <meta property="twitter:title" content="DetectMyIP - Verificar Dirección IP en Línea | Herramienta Gratuita de IP">
+    <meta property="twitter:description" content="Verificador gratuito de dirección IP y herramientas de red. Detecte instantáneamente su IP pública, ubicación, proveedor y zona horaria. Soporte IPv4/IPv6 con diagnósticos avanzados de red.">
+    <meta property="twitter:image" content="https://detectmyip.net/favicon/favicon.svg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://detectmyip.net/es/">
+    
+    <!-- Hreflang for multilingual support -->
+    <link rel="alternate" hreflang="en" href="https://detectmyip.net/">
+    <link rel="alternate" hreflang="ru" href="https://detectmyip.net/ru/">
+    <link rel="alternate" hreflang="es" href="https://detectmyip.net/es/">
+    <link rel="alternate" hreflang="x-default" href="https://detectmyip.net/">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "DetectMyIP",
+        "description": "Verificador gratuito de dirección IP y herramientas de red. Detecte instantáneamente su IP pública, ubicación, proveedor y zona horaria.",
+        "url": "https://detectmyip.net/es/",
+        "applicationCategory": "Utility",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "DetectMyIP"
+        }
+    }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.svg">
+    <link rel="apple-touch-icon" href="favicon/favicon.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="favicon/favicon.svg" alt="DetectMyIP" class="logo-icon">
+                    <span>DetectMyIP</span>
+                </a>
+            <nav class="nav">
+                <a href="index.html#tools" class="nav-link">Herramientas</a>
+                <div class="language-selector">
+                    <div class="custom-dropdown" id="languageDropdown">
+                        <div class="dropdown-trigger">
+                            <span class="selected-lang">ES</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-item" data-lang="en">EN</div>
+                            <div class="dropdown-item" data-lang="ru">RU</div>
+                            <div class="dropdown-item selected" data-lang="es">ES</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header Ad -->
+    <div id="header-ad" class="ad-container header-ad"></div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">¿Cuál es mi dirección IP?</h1>
+                <p class="hero-subtitle">Descubra su dirección IP pública, ubicación e información del proveedor</p>
+                
+                <div class="ip-display">
+                    <div class="ip-info">
+                        <div class="ip-label">Su dirección IPv4:</div>
+                        <div class="ip-value" id="ipv4">Detectando...</div>
+                        <button class="copy-btn" id="copyIpv4" title="Copiar">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="ip-info">
+                        <div class="ip-label">Su dirección IPv6:</div>
+                        <div class="ip-value" id="ipv6">Detectando...</div>
+                        <button class="copy-btn" id="copyIpv6" title="Copiar">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="location-info" id="locationInfo">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Ciudad:</span>
+                                <span class="info-value" id="city">Detectando...</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-flag"></i>
+                            <div>
+                                <span class="info-label">País:</span>
+                                <span class="info-value" id="country">Detectando...</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <span class="info-label">Proveedor:</span>
+                                <span class="info-value" id="isp">Detectando...</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <span class="info-label">Zona horaria:</span>
+                                <span class="info-value" id="timezone">Detectando...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IP Information Section -->
+        <section class="ip-info-section">
+            <div class="container">
+                <h2 class="section-title">¿Qué es una dirección IP?</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>¿Qué es una dirección IP?</h3>
+                        <p>Una dirección IP (dirección del Protocolo de Internet) es un identificador único asignado a cada dispositivo conectado a internet. Permite a los dispositivos enviar y recibir datos a través de la web o red local.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>¿Cómo funciona una dirección IP?</h3>
+                        <p>Cuando su dispositivo se conecta a internet, su proveedor de servicios de internet (ISP) le asigna una dirección IP. Esta dirección actúa como dirección de retorno para los datos, permitiendo que los sitios web envíen información de vuelta a usted.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Dirección IP privada</h3>
+                        <p>La dirección IP privada se asigna a dispositivos en una red local, como en su hogar u oficina. Estas direcciones se utilizan para comunicación interna y no son directamente accesibles desde internet.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-exchange-alt"></i>
+                        <h3>IPv4 vs IPv6</h3>
+                        <p>IPv4 utiliza direcciones de 32 bits (ej., 192.168.1.1), permitiendo alrededor de 4.3 mil millones de direcciones únicas. IPv6 utiliza direcciones de 128 bits, proporcionando prácticamente un número ilimitado de direcciones únicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tools" id="tools">
+            <div class="container">
+                <h2 class="section-title">Herramientas de Red</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Búsqueda IP</h3>
+                        <p>Buscar información para cualquier dirección IP</p>
+                        <div class="tool-input">
+                            <input type="text" id="ipLookupInput" placeholder="Ingrese dirección IP">
+                            <button id="ipLookupBtn">Buscar</button>
+                        </div>
+                        <div class="tool-result" id="ipLookupResult"></div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>Búsqueda DNS</h3>
+                        <p>Verificar registros DNS del dominio</p>
+                        <div class="tool-input">
+                            <input type="text" id="dnsLookupInput" placeholder="Ingrese dominio">
+                            <button id="dnsLookupBtn">Verificar</button>
+                        </div>
+                        <div class="tool-result" id="dnsLookupResult"></div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Verificación Proxy</h3>
+                        <p>Verificar uso de proxy</p>
+                        <div class="tool-input">
+                            <input type="text" id="proxyCheckInput" placeholder="Ingrese dirección IP (opcional)" style="display: none;">
+                            <button id="proxyCheckBtn" class="full-width-btn">Verificar Proxy</button>
+                        </div>
+                        <div class="tool-result" id="proxyCheckResult"></div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <h3>Verificación Lista Negra</h3>
+                        <p>Verificar IP en listas negras</p>
+                        <div class="tool-input">
+                            <input type="text" id="blacklistInput" placeholder="Ingrese dirección IP">
+                            <button id="blacklistBtn">Verificar</button>
+                        </div>
+                        <div class="tool-result" id="blacklistResult"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Ad -->
+        <div id="content-ad" class="ad-container content-ad"></div>
+
+        <!-- Speed Test Section -->
+        <section class="speed-test-section" id="speedTest">
+            <div class="container">
+                <div class="speed-test-header">
+                    <div class="speed-test-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="speed-test-title">
+                        <h3>Prueba de velocidad de internet</h3>
+                        <p>Verifica la velocidad de tu conexión a internet</p>
+                    </div>
+                </div>
+                
+                <div class="speed-test-content" id="speedTestResult">
+                    <div class="speed-test-layout">
+                        <!-- Center - Speedometer -->
+                        <div class="speed-test-center">
+                            <div class="speedometer-large">
+                                <div class="speedometer-face-large">
+                                    <img src="../speedometer.svg" alt="Speedometer" class="speedometer-svg">
+                                    <div class="speedometer-needle-container" id="speedometerNeedle">
+                                        <img src="../arrow.svg" alt="Arrow" class="speedometer-arrow">
+                                    </div>
+                                    
+                                    <!-- Current Speed Display inside speedometer -->
+                                    <div class="current-speed-display" id="currentSpeedDisplay">
+                                        <div class="current-speed-value" id="currentSpeedValue">0</div>
+                                        <div class="current-speed-unit">Mbps</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+            <!-- Start Button - Between speedometer and results -->
+            <div class="speed-test-button-bottom">
+                <button id="speedTestBtn" class="speed-test-go-btn">
+                    <i class="fas fa-play"></i>
+                    Iniciar prueba
+                </button>
+                <button id="speedTestResetBtn" class="speed-test-reset-btn">
+                    <i class="fas fa-redo"></i>
+                    Reiniciar
+                </button>
+            </div>
+            
+            <!-- Results - Below button -->
+            <div class="speed-test-results-bottom">
+                <div class="speed-test-item-bottom" id="pingResult">
+                    <div class="speed-test-item-header-bottom">
+                        <i class="fas fa-wifi"></i>
+                        <span>Ping</span>
+                    </div>
+                    <div class="speed-test-value-bottom" id="pingValue">--</div>
+                    <div class="speed-test-unit-bottom">ms</div>
+                </div>
+                <div class="speed-test-item-bottom" id="downloadResult">
+                    <div class="speed-test-item-header-bottom">
+                        <i class="fas fa-download"></i>
+                        <span>Descarga</span>
+                    </div>
+                    <div class="speed-test-value-bottom" id="downloadValue">--</div>
+                    <div class="speed-test-unit-bottom">Mbps</div>
+                </div>
+                <div class="speed-test-item-bottom" id="overallResult">
+                    <div class="speed-test-item-header-bottom">
+                        <i class="fas fa-star"></i>
+                        <span>General</span>
+                    </div>
+                    <div class="speed-test-value-bottom" id="overallValue">--</div>
+                    <div class="speed-test-unit-bottom">Calidad</div>
+                </div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">Acerca de nuestro servicio</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>DetectMyIP es un servicio gratuito para determinar la dirección IP y obtener información sobre su conexión a internet. Proporcionamos información precisa sobre su dirección IP pública, ubicación y proveedor.</p>
+                        
+                        <h3>Nuestras características:</h3>
+                        <ul>
+                            <li>Detección de direcciones IPv4 e IPv6</li>
+                            <li>Geolocalización de dirección IP</li>
+                            <li>Información del proveedor</li>
+                            <li>Verificación de proxy y VPN</li>
+                            <li>Herramientas de búsqueda DNS</li>
+                            <li>Verificación de listas negras</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Blogs Section -->
+        <section class="popular-blogs">
+            <div class="container">
+                <h2 class="section-title">Artículos Populares</h2>
+                <div class="blogs-grid">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3>IPv4 vs IPv6</h3>
+                            <p>Aprende sobre las diferencias entre los protocolos IPv4 e IPv6, sus ventajas y desafíos de migración.</p>
+                            <a href="blog.html#ipv4-ipv6" class="blog-link">Leer más</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Protección de IP</h3>
+                            <p>Guía para proteger tu privacidad y anonimato en internet.</p>
+                            <a href="blog.html#security" class="blog-link">Leer más</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Prueba de Velocidad</h3>
+                            <p>Cómo probar correctamente la velocidad de internet y obtener resultados precisos.</p>
+                            <a href="blog.html#speed-test" class="blog-link">Leer más</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3>DNS Lookup</h3>
+                            <p>Cómo funciona el sistema de nombres de dominio y cómo usar herramientas de DNS lookup.</p>
+                            <a href="blog.html#dns-lookup" class="blog-link">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Ad -->
+    <div id="footer-ad" class="ad-container footer-ad"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="../logo-white.svg" alt="DetectMyIP" class="footer-logo-icon">
+                    <span class="footer-logo-text">DetectMyIP</span>
+                </div>
+                <nav class="footer-nav">
+                    <a href="index.html#tools" class="footer-nav-link">Herramientas</a>
+                    <a href="about.html" class="footer-nav-link">Acerca de</a>
+                    <a href="faq.html" class="footer-nav-link">FAQ</a>
+                    <a href="blog.html" class="footer-nav-link">Blog</a>
+                    <a href="guide.html" class="footer-nav-link">Guía</a>
+                    <a href="contact.html" class="footer-nav-link">Contacto</a>
+                </nav>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <a href="privacy.html" class="footer-bottom-link">Privacidad</a>
+                    <a href="terms.html" class="footer-bottom-link">Términos</a>
+                </div>
+                <div class="footer-bottom-right">
+                    <p>&copy; 2024 DetectMyIP. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/adsense.js"></script>
+</body>
+</html>

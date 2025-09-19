@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru" id="html-lang">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-7600501505462222">
+    <title>DetectMyIP - Определить IP адрес онлайн | Бесплатный IP детектор</title>
+    <meta name="description" content="Бесплатный детектор IP адреса и сетевые инструменты. Мгновенно определите ваш публичный IP, местоположение, провайдера и часовой пояс. Поддержка IPv4/IPv6 с продвинутой диагностикой сети.">
+    <meta name="keywords" content="IP адрес, мой IP, определить IP, геолокация, провайдер, сетевые инструменты, поиск IP, IPv4, IPv6, проверка прокси, DNS lookup, проверка черных списков, IP детектор, публичный IP, приватный IP, интернет протокол">
+    <meta name="author" content="DetectMyIP">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="ru">
+    <meta name="revisit-after" content="7 days">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="theme-color" content="#667eea">
+    
+    <!-- Additional SEO meta tags -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="DetectMyIP">
+    <meta name="application-name" content="DetectMyIP">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- Security headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    <!-- Performance hints -->
+    <link rel="dns-prefetch" href="//api.ipify.org">
+    <link rel="dns-prefetch" href="//ipinfo.io">
+    <link rel="preconnect" href="//api.ipify.org">
+    <link rel="preconnect" href="//ipinfo.io">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://detectmyip.net/ru/">
+    <meta property="og:title" content="DetectMyIP - Определить IP адрес онлайн | Бесплатный IP детектор">
+    <meta property="og:description" content="Бесплатный детектор IP адреса и сетевые инструменты. Мгновенно определите ваш публичный IP, местоположение, провайдера и часовой пояс. Поддержка IPv4/IPv6 с продвинутой диагностикой сети.">
+    <meta property="og:image" content="https://detectmyip.net/favicon/favicon.svg">
+    <meta property="og:site_name" content="DetectMyIP">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://detectmyip.net/ru/">
+    <meta property="twitter:title" content="DetectMyIP - Определить IP адрес онлайн | Бесплатный IP детектор">
+    <meta property="twitter:description" content="Бесплатный детектор IP адреса и сетевые инструменты. Мгновенно определите ваш публичный IP, местоположение, провайдера и часовой пояс. Поддержка IPv4/IPv6 с продвинутой диагностикой сети.">
+    <meta property="twitter:image" content="https://detectmyip.net/favicon/favicon.svg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://detectmyip.net/ru/">
+    
+    <!-- Hreflang for multilingual support -->
+    <link rel="alternate" hreflang="en" href="https://detectmyip.net/">
+    <link rel="alternate" hreflang="ru" href="https://detectmyip.net/ru/">
+    <link rel="alternate" hreflang="es" href="https://detectmyip.net/es/">
+    <link rel="alternate" hreflang="x-default" href="https://detectmyip.net/">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "DetectMyIP",
+        "description": "Бесплатный детектор IP адреса и сетевые инструменты. Мгновенно определите ваш публичный IP, местоположение, провайдера и часовой пояс.",
+        "url": "https://detectmyip.net/ru/",
+        "applicationCategory": "Utility",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "creator": {
+            "@type": "Organization",
+            "name": "DetectMyIP"
+        }
+    }
+    </script>
+    
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon.svg">
+    <link rel="apple-touch-icon" href="favicon/favicon.svg">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="favicon/favicon.svg" alt="DetectMyIP" class="logo-icon">
+                    <span>DetectMyIP</span>
+                </a>
+            <nav class="nav">
+                <a href="index.html#tools" class="nav-link">Инструменты</a>
+                <div class="language-selector">
+                    <div class="custom-dropdown" id="languageDropdown">
+                        <div class="dropdown-trigger">
+                            <span class="selected-lang">RU</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-item" data-lang="en">EN</div>
+                            <div class="dropdown-item selected" data-lang="ru">RU</div>
+                            <div class="dropdown-item" data-lang="es">ES</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header Ad -->
+    <div id="header-ad" class="ad-container header-ad"></div>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Определить мой IP адрес</h1>
+                <p class="hero-subtitle">Узнайте ваш публичный IP адрес, местоположение и информацию о провайдере</p>
+                
+                <div class="ip-display">
+                    <div class="ip-info">
+                        <div class="ip-label">Ваш IPv4 адрес:</div>
+                        <div class="ip-value" id="ipv4">Определение...</div>
+                        <button class="copy-btn" id="copyIpv4" title="Копировать">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="ip-info">
+                        <div class="ip-label">Ваш IPv6 адрес:</div>
+                        <div class="ip-value" id="ipv6">Определение...</div>
+                        <button class="copy-btn" id="copyIpv6" title="Копировать">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="location-info" id="locationInfo">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="info-label">Город:</span>
+                                <span class="info-value" id="city">Определение...</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-flag"></i>
+                            <div>
+                                <span class="info-label">Страна:</span>
+                                <span class="info-value" id="country">Определение...</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-building"></i>
+                            <div>
+                                <span class="info-label">Провайдер:</span>
+                                <span class="info-value" id="isp">Определение...</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <span class="info-label">Часовой пояс:</span>
+                                <span class="info-value" id="timezone">Определение...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IP Information Section -->
+        <section class="ip-info-section">
+            <div class="container">
+                <h2 class="section-title">Что такое IP адрес?</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <i class="fas fa-info-circle"></i>
+                        <h3>Что такое IP адрес?</h3>
+                        <p>IP адрес (Internet Protocol address) - это уникальный идентификатор, присваиваемый каждому устройству, подключенному к интернету. Он позволяет устройствам отправлять и получать данные через веб или в локальной сети.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Как работает IP адрес?</h3>
+                        <p>Когда ваше устройство подключается к интернету, ваш интернет-провайдер (ISP) присваивает ему IP адрес. Этот адрес действует как обратный адрес для данных, позволяя веб-сайтам отправлять информацию обратно к вам.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Приватный IP адрес</h3>
+                        <p>Приватный IP адрес присваивается устройствам в локальной сети, например, в вашем доме или офисе. Эти адреса используются для внутренней связи и не доступны напрямую из интернета.</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-exchange-alt"></i>
+                        <h3>IPv4 vs IPv6</h3>
+                        <p>IPv4 использует 32-битные адреса (например, 192.168.1.1), позволяя около 4.3 миллиарда уникальных адресов. IPv6 использует 128-битные адреса, предоставляя практически неограниченное количество уникальных адресов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tools" id="tools">
+            <div class="container">
+                <h2 class="section-title">Сетевые инструменты</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>IP Lookup</h3>
+                        <p>Поиск информации по любому IP адресу</p>
+                        <div class="tool-input">
+                            <input type="text" id="ipLookupInput" placeholder="Введите IP адрес">
+                            <button id="ipLookupBtn">Поиск</button>
+                        </div>
+                        <div class="tool-result" id="ipLookupResult"></div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>DNS Lookup</h3>
+                        <p>Проверка DNS записей домена</p>
+                        <div class="tool-input">
+                            <input type="text" id="dnsLookupInput" placeholder="Введите домен">
+                            <button id="dnsLookupBtn">Проверить</button>
+                        </div>
+                        <div class="tool-result" id="dnsLookupResult"></div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Proxy Check</h3>
+                        <p>Проверка использования прокси</p>
+                        <div class="tool-input">
+                            <input type="text" id="proxyCheckInput" placeholder="Введите IP адрес (опционально)" style="display: none;">
+                            <button id="proxyCheckBtn" class="full-width-btn">Проверить прокси</button>
+                        </div>
+                        <div class="tool-result" id="proxyCheckResult"></div>
+                    </div>
+
+                    <div class="tool-card">
+                        <div class="tool-icon">
+                            <i class="fas fa-ban"></i>
+                        </div>
+                        <h3>Blacklist Check</h3>
+                        <p>Проверка IP в черных списках</p>
+                        <div class="tool-input">
+                            <input type="text" id="blacklistInput" placeholder="Введите IP адрес">
+                            <button id="blacklistBtn">Проверить</button>
+                        </div>
+                        <div class="tool-result" id="blacklistResult"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content Ad -->
+        <div id="content-ad" class="ad-container content-ad"></div>
+
+        <!-- Speed Test Section -->
+        <section class="speed-test-section" id="speedTest">
+            <div class="container">
+                <div class="speed-test-header">
+                    <div class="speed-test-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <div class="speed-test-title">
+                        <h3>Тест скорости интернета</h3>
+                        <p>Проверьте скорость вашего интернет-соединения</p>
+                    </div>
+                </div>
+                
+                <div class="speed-test-content" id="speedTestResult">
+                    <div class="speed-test-layout">
+                        <!-- Center - Speedometer -->
+                        <div class="speed-test-center">
+                            <div class="speedometer-large">
+                                <div class="speedometer-face-large">
+                                    <img src="../speedometer.svg" alt="Speedometer" class="speedometer-svg">
+                                    <div class="speedometer-needle-container" id="speedometerNeedle">
+                                        <img src="../arrow.svg" alt="Arrow" class="speedometer-arrow">
+                                    </div>
+                                    
+                                    <!-- Current Speed Display inside speedometer -->
+                                    <div class="current-speed-display" id="currentSpeedDisplay">
+                                        <div class="current-speed-value" id="currentSpeedValue">0</div>
+                                        <div class="current-speed-unit">Мбит/с</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+            <!-- Start Button - Between speedometer and results -->
+            <div class="speed-test-button-bottom">
+                <button id="speedTestBtn" class="speed-test-go-btn">
+                    <i class="fas fa-play"></i>
+                    Начать тест
+                </button>
+                <button id="speedTestResetBtn" class="speed-test-reset-btn">
+                    <i class="fas fa-redo"></i>
+                    Сброс
+                </button>
+            </div>
+            
+            <!-- Results - Below button -->
+            <div class="speed-test-results-bottom">
+                <div class="speed-test-item-bottom" id="pingResult">
+                    <div class="speed-test-item-header-bottom">
+                        <i class="fas fa-wifi"></i>
+                        <span>Пинг</span>
+                    </div>
+                    <div class="speed-test-value-bottom" id="pingValue">--</div>
+                    <div class="speed-test-unit-bottom">мс</div>
+                </div>
+                <div class="speed-test-item-bottom" id="downloadResult">
+                    <div class="speed-test-item-header-bottom">
+                        <i class="fas fa-download"></i>
+                        <span>Скачивание</span>
+                    </div>
+                    <div class="speed-test-value-bottom" id="downloadValue">--</div>
+                    <div class="speed-test-unit-bottom">Мбит/с</div>
+                </div>
+                <div class="speed-test-item-bottom" id="overallResult">
+                    <div class="speed-test-item-header-bottom">
+                        <i class="fas fa-star"></i>
+                        <span>Общее</span>
+                    </div>
+                    <div class="speed-test-value-bottom" id="overallValue">--</div>
+                    <div class="speed-test-unit-bottom">Качество</div>
+                </div>
+            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="section-title">О нашем сервисе</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>DetectMyIP - это бесплатный сервис для определения IP адреса и получения информации о вашем интернет-соединении. Мы предоставляем точную информацию о вашем публичном IP адресе, местоположении и провайдере.</p>
+                        
+                        <h3>Наши возможности:</h3>
+                        <ul>
+                            <li>Определение IPv4 и IPv6 адресов</li>
+                            <li>Геолокация по IP адресу</li>
+                            <li>Информация о провайдере</li>
+                            <li>Проверка прокси и VPN</li>
+                            <li>DNS lookup инструменты</li>
+                            <li>Проверка черных списков</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Blogs Section -->
+        <section class="popular-blogs">
+            <div class="container">
+                <h2 class="section-title">Популярные статьи</h2>
+                <div class="blogs-grid">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3>IPv4 vs IPv6</h3>
+                            <p>Узнайте о различиях между протоколами IPv4 и IPv6, их преимуществах и проблемах миграции.</p>
+                            <a href="blog.html#ipv4-ipv6" class="blog-link">Читать далее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Защита IP адреса</h3>
+                            <p>Руководство по защите вашей приватности и анонимности в интернете.</p>
+                            <a href="blog.html#security" class="blog-link">Читать далее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Тест скорости</h3>
+                            <p>Как правильно тестировать скорость интернета и получать точные результаты.</p>
+                            <a href="blog.html#speed-test" class="blog-link">Читать далее</a>
+                        </div>
+                    </div>
+                    
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="blog-content">
+                            <h3>DNS Lookup</h3>
+                            <p>Как работает система доменных имен и как использовать DNS lookup инструменты.</p>
+                            <a href="blog.html#dns-lookup" class="blog-link">Читать далее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Ad -->
+    <div id="footer-ad" class="ad-container footer-ad"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="../logo-white.svg" alt="DetectMyIP" class="footer-logo-icon">
+                    <span class="footer-logo-text">DetectMyIP</span>
+                </div>
+                <nav class="footer-nav">
+                    <a href="index.html#tools" class="footer-nav-link">Инструменты</a>
+                    <a href="about.html" class="footer-nav-link">О нас</a>
+                    <a href="faq.html" class="footer-nav-link">FAQ</a>
+                    <a href="blog.html" class="footer-nav-link">Блог</a>
+                    <a href="guide.html" class="footer-nav-link">Руководство</a>
+                    <a href="contact.html" class="footer-nav-link">Контакты</a>
+                </nav>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <a href="privacy.html" class="footer-bottom-link">Конфиденциальность</a>
+                    <a href="terms.html" class="footer-bottom-link">Условия</a>
+                </div>
+                <div class="footer-bottom-right">
+                    <p>&copy; 2024 DetectMyIP. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/adsense.js"></script>
+</body>
+</html>

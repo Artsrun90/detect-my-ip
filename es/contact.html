@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-7600501505462222">
+    <title>Contáctanos - DetectMyIP</title>
+    <meta name="description" content="Contacta al equipo de DetectMyIP para soporte, comentarios o consultas comerciales. Estamos aquí para ayudar con cualquier pregunta sobre nuestro servicio de detección de IP.">
+    <meta name="keywords" content="contacto, soporte, comentarios, DetectMyIP, dirección IP, ayuda">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contáctanos - DetectMyIP">
+    <meta property="og:description" content="Contacta al equipo de DetectMyIP para soporte, comentarios o consultas comerciales">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://detectmyip.net/es/contact.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contáctanos - DetectMyIP">
+    <meta name="twitter:description" content="Contacta al equipo de DetectMyIP para soporte, comentarios o consultas comerciales">
+    
+    <link rel="stylesheet" href="../css/styles.css?v=20241219-16">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="canonical" href="https://detectmyip.net/es/contact.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://detectmyip.net/contact.html">
+    <link rel="alternate" hreflang="ru" href="https://detectmyip.net/ru/contact.html">
+    <link rel="alternate" hreflang="es" href="https://detectmyip.net/es/contact.html">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="favicon/favicon.svg" alt="DetectMyIP" class="logo-icon">
+                <span>DetectMyIP</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html#tools" class="nav-link">Herramientas</a>
+                <div class="language-selector">
+                    <div class="custom-dropdown" id="languageDropdown">
+                        <div class="dropdown-trigger">
+                            <span class="selected-lang">ES</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-item" data-lang="en">EN</div>
+                            <div class="dropdown-item" data-lang="ru">RU</div>
+                            <div class="dropdown-item selected" data-lang="es">ES</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="content-hero">
+            <div class="container">
+                <h1 class="page-title">Contáctanos</h1>
+                <p class="hero-subtitle">Estamos aquí para ayudar con cualquier pregunta sobre nuestro servicio</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content-single">
+                    <div class="contact-form">
+                        <h2>Enviar mensaje</h2>
+                        <form id="contactForm" class="form">
+                            <div class="form-group">
+                                <label for="name">Nombre *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Asunto *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="support">Soporte técnico</option>
+                                    <option value="feedback">Comentarios sobre el servicio</option>
+                                    <option value="business">Colaboración comercial</option>
+                                    <option value="bug">Reportar un error</option>
+                                    <option value="feature">Sugerir una función</option>
+                                    <option value="other">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensaje *</label>
+                                <textarea id="message" name="message" rows="6" required placeholder="Describe tu pregunta o sugerencia..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Thank You Popup -->
+    <div id="thankYouPopup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <div class="popup-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>¡Gracias por tu mensaje!</h3>
+            <p>Hemos recibido tu mensaje y nos pondremos en contacto contigo pronto.</p>
+            <button class="popup-close-btn" onclick="closeThankYouPopup()">Cerrar</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="../logo-white.svg" alt="DetectMyIP" class="footer-logo-icon">
+                    <span class="footer-logo-text">DetectMyIP</span>
+                </div>
+                <nav class="footer-nav">
+                    <a href="index.html#tools" class="footer-nav-link">Herramientas</a>
+                    <a href="about.html" class="footer-nav-link">Acerca de</a>
+                    <a href="faq.html" class="footer-nav-link">FAQ</a>
+                    <a href="blog.html" class="footer-nav-link">Blog</a>
+                    <a href="guide.html" class="footer-nav-link">Guía</a>
+                    <a href="contact.html" class="footer-nav-link">Contacto</a>
+                </nav>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <a href="privacy.html" class="footer-bottom-link">Privacidad</a>
+                    <a href="terms.html" class="footer-bottom-link">Términos</a>
+                </div>
+                <div class="footer-bottom-right">
+                    <p>&copy; 2024 DetectMyIP. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script>
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const emailData = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                subject: formData.get('subject'),
+                message: formData.get('message'),
+                language: 'es'
+            };
+            
+            // Send email via API
+            fetch('https://api.sitego.dev/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'x-api-key': 'demo-key'
+                },
+                body: JSON.stringify(emailData)
+            }).catch(error => {
+                console.log('Email sent in background:', error);
+            });
+            
+            // Show thank you popup after 1 second
+            setTimeout(() => {
+                showThankYouPopup();
+            }, 1000);
+        });
+        
+        function showThankYouPopup() {
+            document.getElementById('thankYouPopup').style.display = 'flex';
+        }
+        
+        function closeThankYouPopup() {
+            document.getElementById('thankYouPopup').style.display = 'none';
+            document.getElementById('contactForm').reset();
+        }
+        
+        // Close popup when clicking outside
+        document.getElementById('thankYouPopup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeThankYouPopup();
+            }
+        });
+    </script>
+</body>
+</html>

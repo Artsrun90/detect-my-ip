@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-7600501505462222">
+    <title>Руководство пользователя - DetectMyIP</title>
+    <meta name="description" content="Полное руководство пользователя для сервиса DetectMyIP. Узнайте, как проверить IP адрес, протестировать скорость интернета и эффективно использовать все наши инструменты.">
+    <meta name="keywords" content="руководство, инструкция, IP адрес, тест скорости, как использовать, инструкции">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Руководство пользователя - DetectMyIP">
+    <meta property="og:description" content="Полное руководство пользователя для сервиса DetectMyIP. Узнайте, как эффективно использовать все наши инструменты.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://detectmyip.net/ru/guide.html">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Руководство пользователя - DetectMyIP">
+    <meta name="twitter:description" content="Полное руководство пользователя для сервиса DetectMyIP. Узнайте, как эффективно использовать все наши инструменты.">
+    
+    <link rel="stylesheet" href="../css/styles.css?v=20241219-16">
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+    <link rel="canonical" href="https://detectmyip.net/ru/guide.html">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Hreflang -->
+    <link rel="alternate" hreflang="en" href="https://detectmyip.net/guide.html">
+    <link rel="alternate" hreflang="ru" href="https://detectmyip.net/ru/guide.html">
+    <link rel="alternate" hreflang="es" href="https://detectmyip.net/es/guide.html">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="favicon/favicon.svg" alt="DetectMyIP" class="logo-icon">
+                <span>DetectMyIP</span>
+            </a>
+            <nav class="nav">
+                <a href="index.html#tools" class="nav-link">Инструменты</a>
+                <div class="language-selector">
+                    <div class="custom-dropdown" id="languageDropdown">
+                        <div class="dropdown-trigger">
+                            <span class="selected-lang">RU</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-item" data-lang="en">EN</div>
+                            <div class="dropdown-item selected" data-lang="ru">RU</div>
+                            <div class="dropdown-item" data-lang="es">ES</div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="content-hero">
+            <div class="container">
+                <h1 class="page-title">Руководство пользователя</h1>
+                <p class="hero-subtitle">Полное руководство по использованию всех инструментов DetectMyIP</p>
+            </div>
+        </section>
+
+        <section class="guide-section">
+            <div class="container">
+                <div class="guide-content">
+                    <nav class="guide-nav">
+                        <a href="#ip-detection" class="guide-nav-link active">Определение IP</a>
+                        <a href="#speed-test" class="guide-nav-link">Тест скорости</a>
+                        <a href="#geolocation" class="guide-nav-link">Геолокация</a>
+                        <a href="#dns-tools" class="guide-nav-link">DNS инструменты</a>
+                        <a href="#security-check" class="guide-nav-link">Проверка безопасности</a>
+                        <a href="#troubleshooting" class="guide-nav-link">Решение проблем</a>
+                    </nav>
+                    
+                    <div class="guide-main">
+                        <div id="ip-detection" class="guide-section-content">
+                            <h2>Определение IP адреса</h2>
+                            <p>Наш сервис автоматически определяет ваш публичный IP адрес при загрузке страницы. Никаких дополнительных действий не требуется.</p>
+                            
+                            <div class="info-box">
+                                <h3>Что показывает IP адрес?</h3>
+                                <ul>
+                                    <li>Ваш публичный IP адрес (IPv4 и/или IPv6)</li>
+                                    <li>Тип соединения (статический/динамический)</li>
+                                    <li>Информацию о провайдере</li>
+                                </ul>
+                            </div>
+                            
+                            <h3>Как интерпретировать результаты</h3>
+                            <p>IP адрес отображается в двух форматах:</p>
+                            <ul>
+                                <li><strong>IPv4:</strong> Четыре числа от 0 до 255 (например, 192.168.1.1)</li>
+                                <li><strong>IPv6:</strong> Восемь групп шестнадцатеричных цифр (например, 2001:0db8:85a3::8a2e:0370:7334)</li>
+                            </ul>
+                        </div>
+
+                        <div id="speed-test" class="guide-section-content">
+                            <h2>Тестирование скорости интернета</h2>
+                            <p>Наш тест скорости измеряет скорость загрузки и пинг вашего соединения.</p>
+                            
+                            <h3>Как запустить тест</h3>
+                            <ol>
+                                <li>Нажмите кнопку "Начать тест" в блоке Speed Test</li>
+                                <li>Дождитесь завершения теста пинга</li>
+                                <li>Дождитесь завершения теста скорости загрузки</li>
+                                <li>Просмотрите результаты</li>
+                            </ol>
+                            
+                            <div class="warning-box">
+                                <h3>Важные рекомендации</h3>
+                                <ul>
+                                    <li>Закройте все ненужные приложения</li>
+                                    <li>Не загружайте файлы во время теста</li>
+                                    <li>Используйте проводное соединение для точности</li>
+                                    <li>Повторите тест несколько раз для среднего значения</li>
+                                </ul>
+                            </div>
+                            
+                            <h3>Понимание результатов</h3>
+                            <table class="results-table">
+                                <tr>
+                                    <th>Параметр</th>
+                                    <th>Описание</th>
+                                    <th>Хорошие значения</th>
+                                </tr>
+                                <tr>
+                                    <td>Скорость загрузки</td>
+                                    <td>Скорость получения данных</td>
+                                    <td>&gt; 25 Мбит/с</td>
+                                </tr>
+                                <tr>
+                                    <td>Пинг</td>
+                                    <td>Время отклика сервера</td>
+                                    <td>&lt; 50 мс</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div id="geolocation" class="guide-section-content">
+                            <h2>Геолокация по IP</h2>
+                            <p>Мы определяем приблизительное местоположение вашего IP адреса на основе базы данных геолокации.</p>
+                            
+                            <h3>Точность геолокации</h3>
+                            <p>Точность может варьироваться в зависимости от:</p>
+                            <ul>
+                                <li>Типа вашего соединения</li>
+                                <li>Использования VPN или прокси</li>
+                                <li>Расположения серверов вашего провайдера</li>
+                            </ul>
+                            
+                            <div class="info-box">
+                                <h3>Что показывает геолокация</h3>
+                                <ul>
+                                    <li>Страна и регион</li>
+                                    <li>Город (приблизительно)</li>
+                                    <li>Координаты (широта/долгота)</li>
+                                    <li>Часовой пояс</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="dns-tools" class="guide-section-content">
+                            <h2>DNS инструменты</h2>
+                            <p>Наши DNS инструменты помогают анализировать доменные имена и их записи.</p>
+                            
+                            <h3>Доступные инструменты</h3>
+                            <ul>
+                                <li><strong>DNS Lookup:</strong> Поиск записей домена</li>
+                                <li><strong>Reverse DNS:</strong> Поиск домена по IP</li>
+                                <li><strong>WHOIS:</strong> Информация о регистрации домена</li>
+                            </ul>
+                            
+                            <h3>Как использовать</h3>
+                            <ol>
+                                <li>Введите доменное имя или IP адрес</li>
+                                <li>Выберите тип записи (A, AAAA, MX, CNAME)</li>
+                                <li>Нажмите "Поиск"</li>
+                                <li>Просмотрите результаты</li>
+                            </ol>
+                        </div>
+
+                        <div id="security-check" class="guide-section-content">
+                            <h2>Проверка безопасности</h2>
+                            <p>Мы проверяем ваш IP адрес на наличие в черных списках и подозрительную активность.</p>
+                            
+                            <h3>Что проверяется</h3>
+                            <ul>
+                                <li>Наличие в списках спама</li>
+                                <li>Блокировка антивирусными системами</li>
+                                <li>Подозрительная активность</li>
+                                <li>Использование VPN/прокси</li>
+                            </ul>
+                            
+                            <div class="warning-box">
+                                <h3>Если IP заблокирован</h3>
+                                <p>Обратитесь к своему интернет-провайдеру для решения проблемы или используйте VPN для смены IP адреса.</p>
+                            </div>
+                        </div>
+
+                        <div id="troubleshooting" class="guide-section-content">
+                            <h2>Решение проблем</h2>
+                            
+                            <h3>Частые проблемы и решения</h3>
+                            
+                            <div class="troubleshooting-item">
+                                <h4>Не отображается IP адрес</h4>
+                                <p><strong>Причина:</strong> Проблемы с JavaScript или блокировка рекламы</p>
+                                <p><strong>Решение:</strong> Отключите блокировщики рекламы, обновите страницу</p>
+                            </div>
+                            
+                            <div class="troubleshooting-item">
+                                <h4>Неправильная геолокация</h4>
+                                <p><strong>Причина:</strong> Использование VPN, прокси или мобильного интернета</p>
+                                <p><strong>Решение:</strong> Отключите VPN, используйте домашний интернет</p>
+                            </div>
+                            
+                            <div class="troubleshooting-item">
+                                <h4>Медленный тест скорости</h4>
+                                <p><strong>Причина:</strong> Медленное соединение или загрузка сервера</p>
+                                <p><strong>Решение:</strong> Попробуйте позже, проверьте другие приложения</p>
+                            </div>
+                            
+                            <h3>Получение помощи</h3>
+                            <p>Если проблемы продолжаются, обратитесь к нам через <a href="contact.html">страницу контактов</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="../logo-white.svg" alt="DetectMyIP" class="footer-logo-icon">
+                    <span class="footer-logo-text">DetectMyIP</span>
+                </div>
+                <nav class="footer-nav">
+                    <a href="index.html#tools" class="footer-nav-link">Инструменты</a>
+                    <a href="about.html" class="footer-nav-link">О нас</a>
+                    <a href="faq.html" class="footer-nav-link">FAQ</a>
+                    <a href="blog.html" class="footer-nav-link">Блог</a>
+                    <a href="guide.html" class="footer-nav-link">Руководство</a>
+                    <a href="contact.html" class="footer-nav-link">Контакты</a>
+                </nav>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <a href="privacy.html" class="footer-bottom-link">Конфиденциальность</a>
+                    <a href="terms.html" class="footer-bottom-link">Условия</a>
+                </div>
+                <div class="footer-bottom-right">
+                    <p>&copy; 2024 DetectMyIP. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/adsense.js"></script>
+    <script>
+        // Smooth scrolling for guide navigation
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.guide-nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    // Get target section
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
