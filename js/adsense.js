@@ -31,32 +31,25 @@ class AdSenseManager {
 
     // Create ad containers
     createAdContainers() {
-        // Header ad (banner)
+        // Header ad (banner) - автоматические объявления
         this.createAdUnit('header-ad', {
-            slot: '1234567890',
+            slot: 'auto',
             format: 'auto',
             responsive: true,
             style: { display: 'block' }
         });
 
-        // Sidebar ad (rectangle)
-        this.createAdUnit('sidebar-ad', {
-            slot: '1234567891',
-            format: 'rectangle',
-            style: { display: 'block' }
-        });
-
-        // Footer ad (banner)
+        // Footer ad (banner) - автоматические объявления
         this.createAdUnit('footer-ad', {
-            slot: '1234567892',
+            slot: 'auto',
             format: 'auto',
             responsive: true,
             style: { display: 'block' }
         });
 
-        // In-content ad (after tools section)
+        // In-content ad (after tools section) - автоматические объявления
         this.createAdUnit('content-ad', {
-            slot: '1234567893',
+            slot: 'auto',
             format: 'auto',
             responsive: true,
             style: { display: 'block' }
@@ -72,7 +65,12 @@ class AdSenseManager {
         adUnit.className = 'adsbygoogle';
         adUnit.style.display = 'block';
         adUnit.setAttribute('data-ad-client', 'ca-pub-7600501505462222');
-        adUnit.setAttribute('data-ad-slot', config.slot);
+        
+        // Для автоматических объявлений не указываем data-ad-slot
+        if (config.slot !== 'auto') {
+            adUnit.setAttribute('data-ad-slot', config.slot);
+        }
+        
         adUnit.setAttribute('data-ad-format', config.format);
         
         if (config.responsive) {
